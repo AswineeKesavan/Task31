@@ -30,17 +30,17 @@ INSERT INTO Employee (empno, ename, job, mgr, hiredate, sal, comm, deptno)
 VALUES (8839, 'AMIR', 'PRESIDENT', NULL, '1991-11-18', 5000.00, NULL, 10);
 INSERT INTO Employee (empno, ename, job, mgr, hiredate, sal, comm, deptno) 
 VALUES (8844, 'KULDEEP', 'SALESMAN', 8698, '1991-09-08', 1500.00, 0.00, 30);
-#SELECT * FROM Employee;
+SELECT * FROM Employee;
 # write a query to display ename and sal of employee whose sal are gretaer than or equal to 2200?
-#SELECT ename, sal FROM Employee WHERE sal >= 2200;
+SELECT ename, sal FROM Employee WHERE sal >= 2200;
 # write a query to display details of employee who are not getting commission?
-#SELECT comm FROM Employee WHERE comm IS NULL OR comm = 0;
+SELECT comm FROM Employee WHERE comm IS NULL OR comm = 0;
 # write a query to display ename and sal of those employees who don't have their salary in the range of 2500 to 4000?
-#SELECT ename,sal FROM Employee WHERE sal <=2500 OR sal <= 4000;
+SELECT ename,sal FROM Employee WHERE sal <=2500 OR sal <= 4000;
 # write a query to display the name,job title and salary of employee who don't have a manager?
-#SELECT ename,job,sal FROM Employee WHERE job !='MANAGER';
+SELECT ename,job,sal FROM Employee WHERE job !='MANAGER';
 # write a query to display the name of an employee whose name contains "A" as third alphabet?
-#SELECT ename FROM Employee WHERE ename LIKE '__A%';
+SELECT ename FROM Employee WHERE ename LIKE '__A%';
 # write a query to display the name of an employee whose name contains "T" as last alphabet?
 SELECT ename FROM Employee WHERE ename LIKE '%T';
 
